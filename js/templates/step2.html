@@ -1,0 +1,26 @@
+<div class="row step-action step2">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><b>1.</b> Step 1</div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 active"><b>2.</b> Step 2</div>
+</div>
+
+<div class="wrapper-list">
+    <div class="row header-title">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 name-title">Title</div>
+        <div class="col-lg-6 col-md-2 col-sm-12 col-xs-12 description-title">Description</div>
+        <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 price-title">Price</div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 popularity-title">Popularity</div>
+        <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 button-section"></div>
+    </div>
+
+    <div ng-repeat="list in saveList" class="row list">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 name align-self">{{list.item.title}}</div>
+        <div class="col-lg-6 col-md-2 col-sm-12 col-xs-12 description align-self">{{list.item.description}}</div>
+        <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 price align-self">{{list.item.price}}</div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 popularity align-self">
+            <i class="star{{list.item.popularity}}" ></i>
+        </div>
+    </div>
+</div>
+
+<a class="col-lg-1 col-md-2 col-sm-12 col-xs-12 align-self select-button submit" ng-click="submitData()">Sumbit</a>
+

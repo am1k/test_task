@@ -1,0 +1,239 @@
+.align-self {
+  align-self: center;
+}
+.step-action {
+  margin: 10px 0 0 0;
+}
+.step-action div {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding: 15px 0;
+  background: #D1D3D4;
+}
+.step-action div:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  top: 0;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #D1D3D4;
+  border-bottom: 30px solid #fff;
+}
+.step-action div.active {
+  text-align: left;
+  background: #F26522;
+  padding-left: 50px;
+}
+.step-action div.active:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  top: 0;
+  border-top: 25px solid #D1D3D4;
+  border-left: 25px solid #F26522;
+  border-bottom: 30px solid #D1D3D4;
+  z-index: 1;
+}
+.step-action div b {
+  font-size: 18px;
+}
+.step-action.step2 div:after {
+  border-top: 25px solid #F26522;
+  border-left: 25px solid #D1D3D4;
+  border-bottom: 30px solid #F26522;
+}
+.step-action.step2 div.active:after {
+  border-top: 25px solid #fff;
+  border-left: 25px solid #F26522;
+  border-bottom: 30px solid #fff;
+}
+.sub-title-page {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.box {
+  border: 1px solid #F5F6F6;
+  background: #fafafa;
+  overflow: hidden;
+}
+.box .description-text {
+  padding-bottom: 10px;
+}
+.box .select-car {
+  padding: 0 5px 5px 0;
+  display: inline-block;
+}
+.box .select-car .wrapper-button {
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background: #FBB040;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.first .go-step {
+  background: #F15A29;
+}
+.first .go-step:hover {
+  background: #be4922;
+}
+.second .go-step {
+  background: #75BAD3;
+}
+.second .go-step:hover {
+  background: #5b91a3;
+}
+.third .go-step {
+  background: #78A240;
+}
+.third .go-step:hover {
+  background: #628432;
+}
+.go-step {
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.go-step:hover {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.wrapper-list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.wrapper-list .header-title {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.wrapper-list .name-title {
+  padding-left: 25px;
+}
+.wrapper-list .list-table {
+  overflow: hidden;
+}
+.wrapper-list .list {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.wrapper-list .list:nth-of-type(2n) {
+  background: #F1F1F1;
+}
+.wrapper-list .list:last-child {
+  border-bottom: 1px solid #ccc;
+}
+.wrapper-list .list .name {
+  color: #2e6da4;
+  font-weight: bold;
+  padding-left: 25px;
+}
+.popularity {
+  width: 150px;
+  height: 30px;
+  position: relative;
+  background: url(../img/stars_transparent.png);
+  list-style: none;
+}
+.popularity .star1 {
+  width: 20%;
+  background: url(../img/stars_transparent.png) left bottom;
+  height: 30px;
+  float: left;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+}
+.popularity .star2 {
+  width: 40%;
+  background: url(../img/stars_transparent.png) left bottom;
+  height: 30px;
+  float: left;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+}
+.popularity .star3 {
+  width: 60%;
+  background: url(../img/stars_transparent.png) left bottom;
+  height: 30px;
+  float: left;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+}
+.popularity .star4 {
+  width: 80%;
+  background: url(../img/stars_transparent.png) left bottom;
+  height: 30px;
+  float: left;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+}
+.popularity .start5 {
+  width: 100%;
+  background: url(../img/stars_transparent.png) left bottom;
+  height: 30px;
+  float: left;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+}
+.select-button {
+  padding: 5px;
+  border: 1px solid #78A240;
+  border-radius: 3px;
+  color: #78A240;
+  text-align: center;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.select-button:hover {
+  background: #78A240;
+  color: #fff;
+  text-decoration: none;
+}
+.select-button.submit {
+  margin-left: 0;
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .box {
+    padding: 20px;
+  }
+  .box .go-step {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .header-title {
+    display: none;
+  }
+  .wrapper-list .list {
+    text-align: center;
+    flex-direction: column;
+  }
+  .wrapper-list .list div {
+    margin: 5px 0 5px 0;
+  }
+  .wrapper-list .list .select-button {
+    width: 50%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="row step-action">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 active"><b>1.</b> Step 1</div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><b>2.</b> Step 2</div>
+</div>
+
+<div class="row sub-title-page">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">1. Step 1</div>
+</div>
+
+<div class="row">
+    <select-list class="col-lg-4 col-md-4 col-sm-12 col-xs-12 first"></select-list>
+    <select-list class="col-lg-4 col-md-4 col-sm-12 col-xs-12 second"></select-list>
+    <select-list class="col-lg-4 col-md-4 col-sm-12 col-xs-12 third"></select-list>
+</div>
+
+<div class="wrapper-list">
+    <div class="row header-title">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 name-title">Title</div>
+        <div class="col-lg-6 col-md-3 col-sm-12 col-xs-12 description-title">Description</div>
+        <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 price-title">Price</div>
+        <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 popularity-title">Popularity</div>
+        <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 button-section"></div>
+    </div>
+    <div class="list-table">
+        <list class="row list" ng-repeat="item in items | orderBy: 'title'" ng-model="show"
+              object = item
+              visible = show
+              ng-show="show"
+        ></list>
+    </div>
+</div>
